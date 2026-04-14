@@ -1,0 +1,85 @@
+{% set assetHash = global.random() %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+{% include "partials/head.html" %}
+
+<body id="{{ site.siteID }}">
+
+{% include "partials/header.html" %}
+
+<div class="layout" data-layout="valletta">
+
+<div>
+
+{% if featureImage %}
+<figure>
+<img src="{{ featureImage }}" alt="{{ featureImageCaption }}" />
+{% if featureImageCaption %}
+<figcaption>{{ featureImageCaption }}</figcaption>
+{% endif %}
+</figure>
+{% endif %}
+</div><!-- one -->
+
+<div>
+<h1 data-size="3xl">{{ title }}</h1>
+{% if lede %}{{ lede | markdown | safe }}{% endif %}
+{% if introduction %}{{ introduction | markdown | safe }}{% endif %}
+</div><!-- two -->
+
+</div><!-- layout -->
+
+
+
+<div class="layout" data-layout="amsterdam">
+
+<div data-layout="flex">
+{% if pointOne %}<div>{{ pointOne | markdown | safe }}</div>{% endif %}
+{% if pointTwo %}<div>{{ pointTwo | markdown | safe }}</div>{% endif %}
+{% if pointThree %}<div>{{ pointThree | markdown | safe }}</div>{% endif %}
+{% if pointFour %}<div>{{ pointFour | markdown | safe }}</div>{% endif %}
+</div><!-- flex -->
+
+<div data-layout="flex">
+{% if statsOne %}<div>{{ statsOne | markdown | safe }}</div>{% endif %}
+{% if statsTwo %}<div>{{ statsTwo | markdown | safe }}</div>{% endif %}
+{% if statsThree %}<div>{{ statsThree | markdown | safe }}</div>{% endif %}
+{% if statsFour %}<div>{{ statsFour | markdown | safe }}</div>{% endif %}
+</div><!-- flex -->
+
+
+
+<div class="layout" data-layout="tallinn">
+
+<div>
+{% if quote %}
+<blockquote data-variant="l">
+<p>{{ quote }}</p>
+{% if citation %}<footer>{{ citation }}</footer>{% endif %}
+</blockquote>
+{% endif %}
+</div><!-- one -->
+
+</div><!-- layout -->
+
+
+
+{% include "partials/cta.html" %}
+
+</div><!-- layout -->
+
+
+
+
+
+
+{{ content | safe }}
+
+
+{% include "partials/footer.html" %}
+<script src="{{ site.assetPath }}/js/scripts.js"></script>
+</body>
+
+</html>

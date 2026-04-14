@@ -65,16 +65,16 @@ collections:
             required: false
       - label: About
         name: about
-        file: src/about.md
+        file: src/why-us.md
         fields:
           - label: Layout
             name: layout
             widget: hidden
-            default: layouts/about.html
+            default: layouts/why-us.html
           - label: Permalink
             name: permalink
             widget: hidden
-            default: /about/
+            default: /why-us/
           - label: Title
             name: title
             widget: string
@@ -94,9 +94,61 @@ collections:
             name: lede
             widget: markdown
             required: false
-          - label: Sidebar
-            name: aside
+          - label: Introduction
+            name: introduction
             widget: markdown
+            required: false
+          - label: Quote
+            name: quote
+            widget: markdown
+            required: false
+          - label: Citation
+            name: citation
+            widget: string
+            required: false
+          - label: Point one
+            name: pointOne
+            widget: markdown
+            required: false
+          - label: Point two
+            name: pointTwo
+            widget: markdown
+            required: false
+          - label: Point three
+            name: pointThree
+            widget: markdown
+            required: false
+          - label: Point four
+            name: pointFour
+            widget: markdown
+            required: false
+          - label: Stats one
+            name: statsOne
+            widget: markdown
+            required: false
+          - label: Stats two
+            name: statsTwo
+            widget: markdown
+            required: false
+          - label: Stats three
+            name: statsThree
+            widget: markdown
+            required: false
+          - label: Stats four
+            name: statsFour
+            widget: markdown
+            required: false
+          - label: Stats five
+            name: statsFive
+            widget: markdown
+            required: false
+          - label: CTA title
+            name: ctaTitle
+            widget: string
+            required: false
+          - label: CTA description
+            name: ctaDescription
+            widget: text
             required: false
           - label: Body
             name: body
