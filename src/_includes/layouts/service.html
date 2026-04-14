@@ -1,0 +1,47 @@
+{% extends "layouts/base.html" %}
+
+{% block content %}
+
+<div class="layout" data-layout="rome">
+
+<div>
+{% if img %}
+<img src="{{ img }}" alt="{{ title }}">
+{% endif %}
+
+<h1>{{ title }}</h1>
+
+{% if lede %}
+<p>{{ lede }}</p>
+{% endif %}
+
+{% if featured %}
+<p><small>Featured service</small></p>
+{% endif %}
+
+{{ content | safe }}
+
+{% if quotation %}
+<blockquote>
+<p>{{ quotation }}</p>
+</blockquote>
+{% endif %}
+
+{% if ctaText and ctaUrl %}
+<p><a class="btn" href="{{ ctaUrl }}">{{ ctaText }}</a></p>
+{% endif %}
+</div><!-- one -->
+
+<div>
+{% if summary %}
+<p>{{ summary }}</p>
+{% endif %}
+
+<h2>Services</h2>
+{% set serviceItems = collections.servicesItems %}
+{% include "partials/services-list.html" %}
+</div><!-- two -->
+
+</div><!-- layout -->
+
+{% endblock %}

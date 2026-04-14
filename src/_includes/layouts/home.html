@@ -1,0 +1,181 @@
+{% set assetHash = global.random() %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+{% include "partials/head.html" %}
+
+<body id="{{ site.siteID }}">
+
+{% include "partials/header.html" %}
+
+<!-- HERO -->
+
+<section id="hero">
+
+<div></div><!-- one -->
+
+<div>
+<h1>Wedding <span>Planning</span> <br><span>Done Better</span></h1>
+
+{% if lede %}{{ lede | markdown | safe }}{% endif %}
+
+<div data-align-h="center">
+<a href="javascript:void(0)" class="btn" data-variant="hero">Get started</a>
+</div><!-- align -->
+
+</div><!-- two -->
+
+</section>
+
+
+
+<!-- PLANNING SECTION -->
+
+<section id="planning-section">
+
+<div>
+<img src="/images/index-2.webp" alt="">
+</div><!-- one -->
+
+<div>
+
+<div>
+{{ planning | markdown | safe }}
+
+<hr>
+
+<div data-align-h="center">
+<a href="javascript:void(0)" class="btn" data-variant="dark">Get started</a>
+</div><!-- align -->
+</div>
+
+</div><!-- two -->
+
+</section>
+
+
+
+<!-- WATERMARK -->
+
+<div class="watermark-section">
+<div class="watermark-text">The Wed Collective</div><!-- watermark-text -->
+</div><!-- watermark-section -->
+
+
+
+<!-- WHAT IS THE WED COLLECTIVE -->
+
+<section id="what-is-section">
+
+<p class="alt-lede">A bespoke wedding planning platform that connects you with vetted suppliers and gives you the tools you need to plan, all in one place.</p>
+
+<ul class="alt-tags fade-up stagger-3">
+<li>Bookings</li>
+<li>Budget</li>
+<li>Guest list</li>
+<li>Quotes</li>
+<li>Suppliers</li>
+<li>Timelines</li>
+</ul>
+
+</section>
+
+
+
+<!-- WATERMARK  -->
+<div class="watermark-section">
+<div class="watermark-text" data-variant="alt">Wedding planning</div><!-- watermark-text -->
+</div><!-- watermark-section -->
+
+
+
+<!-- CLARITY SECTION -->
+
+<section id="clarity-section">
+
+<div>
+{{ clarity | markdown | safe }}
+<hr>
+
+<div data-align-h="center">
+<a href="javascript:void(0)" class="btn" data-variant="accent">Get started</a>
+</div><!-- align -->
+</div><!-- one -->
+
+<div>
+
+<div>
+{% if clarityImageOne %}<img src="{{ clarityImageOne }}" alt="">{% endif %}
+</div>
+
+<div>
+{% if clarityImageOne %}<img src="{{ clarityImageTwo }}" alt="">{% endif %}
+</div>
+
+{% if clarityImageOne %}<img src="{{ clarityImageThree }}" alt="">{% endif %}
+</div>
+
+</div><!-- two -->
+
+</section>
+
+
+
+<!-- DESIGNED FOR BOTH SIDES -->
+
+<section id="both-sides">
+
+<h2>Designed for both sides of the aisle</h2>
+
+<div class="both-sides-grid">
+
+<div class="fade-up stagger-1">
+
+<small>For couples</small>
+
+<h3>Plan your wedding without the chaos</h3>
+
+<ul>
+<li>Curated suppliers</li>
+<li>No endless scrolling</li>
+<li>Planning hub keeps everything in one place</li>
+<li>Bookings, budgets, and timeline reminders</li>
+<li>Support when you need it</li>
+</ul>
+
+<a href="javascript:void(0)" class="btn" data-variant="accent">Start planning</a>
+
+</div><!-- side-card -->
+
+<div class="fade-up stagger-2">
+
+<small>For suppliers</small>
+
+<h3>Work with couples who are genuinely aligned</h3>
+
+<ul>
+<li>Enquiries with context</li>
+<li>No time-wasters</li>
+<li>More time doing what you&#8217;re great at</li>
+<li>Respects your brand and standards</li>
+<li>Quality support</li>
+</ul>
+
+<div class="btn-row">
+<a href="javascript:void(0)" class="btn" data-variant="plain">Sign in</a>
+<a href="javascript:void(0)" class="btn" data-variant="accent">Apply now</a>
+</div><!-- btn-row -->
+
+</div><!-- side-card -->
+
+</div><!-- both-sides-grid -->
+</section>
+
+
+{% include "partials/footer.html" %}
+
+<script src="{{ site.assetPath }}/js/scripts.js"></script>
+</body>
+
+</html>

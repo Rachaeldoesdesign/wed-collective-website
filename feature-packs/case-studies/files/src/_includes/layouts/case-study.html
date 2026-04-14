@@ -1,0 +1,85 @@
+{% extends "layouts/base.html" %}
+
+{% block content %}
+
+<div class="layout" data-layout="rome">
+
+<div>
+{% if clientLogo %}<img src="{{ clientLogo }}" alt="{{ clientName or title }}">{% endif %}
+
+{% if img %}<img src="{{ img }}" alt="{{ title }}">{% endif %}
+
+{% if featured %}<small>Featured case study</small>{% endif %}
+{% if year %}<small>{{ year }}</small>{% endif %}
+
+<h1>{{ title }}</h1>
+
+{% if lede %}<p>{{ lede }}</p>{% endif %}
+
+{% if clientName %}<p>{{ clientName }}</p>{% endif %}
+
+{% if projectUrl %}<p><a href="{{ projectUrl }}">Visit project</a></p>{% endif %}
+
+{{ content | safe }}
+
+<div data-layout="flex">
+{% if deliverables and deliverables.length %}
+
+<div>
+<h3>Deliverables</h3>
+
+<ul class="alt-">
+{% for deliverable in deliverables %}
+<li>{{ deliverable }}</li>
+{% endfor %}
+</ul>
+</div>
+{% endif %}
+
+{% if outcomes and outcomes.length %}
+<div>
+<h3>Outcomes</h3>
+
+<ul class="alt-">
+{% for outcome in outcomes %}
+<li>{{ outcome }}</li>
+{% endfor %}
+</ul>
+</div>
+{% endif %}
+</div><!-- layout -->
+
+
+
+{% if quotation %}
+<blockquote>
+<p>{{ quotation }}</p>
+</blockquote>
+{% endif %}
+
+</div><!-- one -->
+
+
+
+<div>
+
+{% if categories and categories.length %}
+<h3>Categories</h3>
+
+<ul class="alt-">
+{% for category in categories %}
+<li><a href="/case-studies/category/{{ category | slug }}/">{{ category }}</a></li>
+{% endfor %}
+</ul>
+{% endif %}
+
+<h3>More case studies</h3>
+
+{% set caseStudyItems = collections.caseStudiesItems %}
+{% include "partials/case-studies-list.html" %}
+
+</div><!-- one -->
+
+</div><!-- layout -->
+
+{% endblock %}

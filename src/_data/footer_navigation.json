@@ -1,0 +1,32 @@
+{
+  "items": [
+    {
+      "text": "Home",
+      "url": "/"
+    },
+    {
+      "text": "About",
+      "url": "/about/"
+    },
+    {
+      "text": "Privacy",
+      "url": "/privacy/"
+    },
+    {
+      "text": "Contact",
+      "url": "/contact/"
+    },
+    {
+      "text": "Case studies",
+      "url": "/case-studies/"
+    },
+    {
+      "text": "FAQs",
+      "url": "/faqs/"
+    },
+    {
+      "text": "Services",
+      "url": "/services/"
+    }
+  ]
+}

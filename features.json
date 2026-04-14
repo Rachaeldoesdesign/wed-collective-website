@@ -1,0 +1,9 @@
+{
+  "blog": true,
+  "caseStudies": true,
+  "changelog": false,
+  "faqs": true,
+  "portfolio": false,
+  "services": true,
+  "team": false
+}

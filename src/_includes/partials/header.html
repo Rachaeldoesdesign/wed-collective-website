@@ -1,0 +1,53 @@
+<nav class="navbar">
+
+<div id="banner-logo">
+<a href="/" aria-label="{{ site.name }}" title="Home">{% include "partials/logo.svg" %}<span data-visibility="hidden">{{ site.name }}</span></a>
+</div><!-- banner-logo -->
+
+<div class="navbar-right">
+<a href="javascript:void(0)" class="btn" data-variant="accent">Get Started</a>
+
+<button class="hamburger" type="button" aria-controls="menu" aria-expanded="false" aria-label="Menu">
+<span></span>
+<span></span>
+<span></span>
+</button>
+
+</div>
+</nav>
+
+<!-- SLIDE-OUT MENU -->
+
+<div id="menu-overlay" aria-hidden="true"></div>
+
+<nav id="menu" aria-hidden="true">
+<button class="btn menu-close" type="button" aria-label="Close menu">&times;</button>
+
+<h2 data-size="r">Couples</h2>
+
+<div>
+<a href="javascript:void(0)">Couple sign-up</a>
+<a href="javascript:void(0)">Couple login</a>
+</div>
+
+<hr data-function="spacer">
+
+<h2 data-size="r">Suppliers</h2>
+
+<div>
+<a href="javascript:void(0)">Supplier sign-up</a>
+<a href="javascript:void(0)">Supplier-login</a>
+</div>
+
+<hr data-function="spacer">
+
+<h2 data-size="r">Company</h2>
+
+<div>
+<a href="javascript:void(0)">About us</a>
+<a href="javascript:void(0)">Contact</a>
+<a href="javascript:void(0)">Legal</a>
+<a href="javascript:void(0)">Privacy</a>
+</div>
+
+</nav>
