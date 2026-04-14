@@ -6,7 +6,7 @@
 * Generated via: https://www.fluid-type-scale.com/
 */
 
---font-family-default: 'karla', sans-serif;
+--font-family-default: 'comme', sans-serif;
 --font-family-serif: 'maison-galliard-serif', serif;
 --font-family-script: 'maison-galliard-script', serif;
 
@@ -24,12 +24,12 @@
 --font-size-4xl: clamp(2.6127rem, 1.926rem + 3.0524vw, 4.2915rem);
 
 /* Font weights and line heights */
---font-weight-l: 300;
---font-weight-r: 400;
+--font-weight-l: 200;
+--font-weight-r: 300;
 --font-weight-m: 500;
---font-weight-bd: 600;
+--font-weight-bd: 700;
 --lineheight-r: 1.5;
---lineheight-s: 1.1;
+--lineheight-s: 1.2;
 
 /*
 * COLOR SYSTEM
@@ -116,17 +116,10 @@ UTILITY STYLES
 
 @font-face {
 font-display: swap;
-font-family: 'karla';
+font-family: 'comme';
 font-style: normal;
 font-weight: normal;
-src: url('/fonts/karla-vf.woff2') format('woff2'); }
-
-@font-face {
-font-display: swap;
-font-family: 'karla-italic';
-font-style: normal;
-font-weight: normal;
-src: url('/fonts/karla-italic-vf.woff2') format('woff2'); }
+src: url('/fonts/comme-vf.woff2') format('woff2'); }
 
 @font-face {
 font-display: swap;
@@ -257,8 +250,7 @@ font-feature-settings: liga 1;
 font-optical-sizing: auto;
 font-size: 1em;
 font-style: normal;
-font-variation-settings: "wght" 400;
-font-weight: normal;
+font-weight: var(--font-weight-l);
 line-height: var(--lineheight-r);
 margin: 0; }
 
@@ -319,9 +311,7 @@ h3,
 h4 {
 font-family: var(--font-family-default);
 font-style: normal;
-font-variation-settings: "wght" 800;
-font-weight: normal;
-letter-spacing: -.05em;
+font-weight: var(--font-weight-bd);
 line-height: var(--lineheight-s);
 margin-block: 0 var(--spacing-s);
 text-wrap: balance; /* Prevents single words on last line */ }
@@ -331,8 +321,7 @@ h1 {
 font-size: var(--font-size-3xl); }
 
 h2 {
-font-size: var(--font-size-xl);
-text-transform: uppercase; }
+font-size: var(--font-size-xl); }
 
 h3 { font-size: var(--font-size-l); }
 h4 { font-size: var(--font-size-m); }
@@ -351,15 +340,14 @@ color: var(--color-text-link-hover); }
 
 p {
 font-family: var(--font-family-default);
-font-size: var(--font-size-r);
-font-variation-settings: "wght" 400;
-letter-spacing: -.05em;
+font-size: var(--font-size-s);
+font-weight: var(--font-weight-l);
 orphans: 3; }
 
 .alt-lede {
 font-family: var(--font-family-alt);
 font-size: var(--font-size-m);
-font-weight: var(--font-weight-bd); }
+font-weight: var(--font-weight-m); }
 
 /* ==========================================================================
 TEXT TREATMENT CLASSES
@@ -435,7 +423,6 @@ margin-inline: 0;
 padding-inline-start: 0; }
 
 ul li {
-letter-spacing: -.035em;
 margin-block-end: var(--spacing-s); }
 
 ul li:before {
@@ -449,7 +436,6 @@ margin-inline: 0;
 padding-inline-start: 0; }
 
 ol li {
-letter-spacing: -.035em;
 margin-block-end: var(--spacing-s); }
 
 /* Remove default markers from styled lists */
@@ -633,7 +619,7 @@ color: var(--color-text-alt);
 cursor: pointer;
 font-family: var(--font-family-default);
 font-size: var(--font-size-2xl);
-font-variation-settings: "wght" 500;
+font-weight: (--font-weight-m);
 inline-size: fit-content;
 line-height: 1;
 margin: 0;
@@ -650,7 +636,6 @@ color: var(--color-brand); }
 #menu a {
 color: var(--color-text-alt);
 display: block;
-font-variation-settings: "wght" 400;
 text-decoration: none;
 text-transform: uppercase; }
 
@@ -887,7 +872,7 @@ z-index: 2; }
 #hero h1 {
 font-family: var(--font-family-default);
 font-size: var(--font-size-4xl);
-font-variation-settings: "wght" 300;
+font-weight: 300;
 line-height: 1;
 margin-block-end: var(--spacing-r);
 padding-block-start: var(--spacing-l);
@@ -901,7 +886,7 @@ font-weight: 300;
 text-transform: none; }
 
 #hero h1 span:nth-of-type(2) {
-font-variation-settings: "wght" 700; }
+font-weight: 600; }
 
 #hero .btn {
 display: block;
@@ -911,7 +896,7 @@ margin-inline: auto; }
 
 #hero p {
 font-size: var(--font-size-m);
-font-variation-settings: "wght" 500;
+font-weight: var(--font-weight-m);
 text-shadow: 0 0 30px rgba(0,0,0,.35), 0 0 2px rgba(0,0,0,.8);
 text-align: center;
 text-transform: uppercase; }
@@ -936,7 +921,7 @@ align-items: center;
 color: var(--color-text-alt);
 display: inline-flex;
 font-size: var(--font-size-s);
-font-variation-settings: "wght" 500;
+font-weight: var(--font-weight-m);
 gap: var(--spacing-m);
 margin-inline-end: var(--spacing-m);
 transition: opacity 0.3s ease;
@@ -1089,7 +1074,7 @@ background-color: var(--color-brand);
 border-radius: var(--border-radius-r);
 color: var(--color-bright);
 display: inline-block;
-font-variation-settings: "wght" 700;
+font-weight: var(--font-weight-bd);
 margin-block-end: var(--spacing-r);
 padding: var(--spacing-xs) var(--spacing-s);
 text-transform: uppercase; }
@@ -1119,6 +1104,7 @@ grid-template-columns: 1fr 1fr; }
 grid-column: 1 / -1; }
 
 #clarity-section > :nth-child(2) > *:nth-child(3) img {
+outline:1px solid red;
 aspect-ratio: 16 / 9; }
 
 #clarity-section img {

@@ -1,3 +1,5 @@
+const editableSiteContent = require("./site-content.json");
+
 function normalizeUrl(value) {
   return String(value || "").trim().replace(/\/+$/, "");
 }
@@ -18,16 +20,9 @@ module.exports = function() {
   );
 
   return {
-    name: "The Wed Collective",
+    ...editableSiteContent,
     url: "",
     absoluteUrl,
-    assetPath: normalizeAssetPath(process.env.ASSET_PATH),
-    authorName: "Andy Clarke",
-    authorEmail: "andy.clarke@stuffandnonsense.co.uk",
-    telephone: "+44 (0)7515 395903",
-    email: "hello@thewedcollective.co.uk",
-    siteID: "wed-collective",
-    copyrightOwner: "The Wed Collective",
-    buttonText: "Get started"
+    assetPath: normalizeAssetPath(process.env.ASSET_PATH)
   };
 };
