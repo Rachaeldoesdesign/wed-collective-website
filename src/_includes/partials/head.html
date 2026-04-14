@@ -3,6 +3,17 @@
 {% include "partials/meta.html" %}
 {% include "partials/json-ld.html" %}
 
+<script>
+(function() {
+  var identityHashPattern = /#(?=.*(?:invite_token|recovery_token|confirmation_token|email_change_token)=)/;
+  var isAdminPage = window.location.pathname === '/admin/' || window.location.pathname === '/admin/index.html';
+
+  if (!isAdminPage && identityHashPattern.test(window.location.hash)) {
+    window.location.replace('/admin/' + window.location.hash);
+  }
+})();
+</script>
+
 <meta name="theme-color" content="#000">
 <meta name="robots" content="index, follow, noodp" />
 
