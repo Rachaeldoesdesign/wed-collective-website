@@ -828,12 +828,6 @@ margin-trim: block;
 padding-inline-start: var(--spacing-l);
 z-index: 2; }
 
-#hero .btn {
-display: block;
-inline-size: 10ch;
-margin-block-end: var(--spacing-s);
-margin-inline: auto; }
-
 #hero p {
 font-size: var(--font-size-m);
 font-weight: var(--font-weight-m);

@@ -6,17 +6,17 @@ featureImage: ""
 featureImageCaption: ""
 
 lede: >
-  You can say &#8220;goodbye to doom scrolling,&#8221; because with us, planning
-  your wedding needn&#8217;t be chaotic.
+  Say &#8220;goodbye to doom scrolling,&#8221; because with The Wed Collective, planning
+  your wedding needn&#8217;t be so challenging.
 
 aside: ""
 
 planning: |
   <p data-align-h="center">Planning your own wedding?</p>
 
-  <h2 data-size="3xl" data-align-h="center">You won&#8217;t need spreadsheets again</h2>
+  <h2 data-size="3xl" data-align-h="center">You won&#8217;t need spreadsheets</h2>
 
-  We bring you planning, incredible, vetted suppliers, and easy decision making in a single online space, so wedding planning feels easier from day one.
+  We bring you planning tools and vetted suppliers in a one easy-to-use online platform.
 
   - Lorem ipsum dolor sit amet
   - Lorem ipsum dolor sit amet
