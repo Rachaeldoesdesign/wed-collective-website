@@ -38,21 +38,5 @@ pointFour: |
 
  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 
-statsOne: |
- ### Stats one
-
-statsTwo: |
- ### Stats two
-
-statsThree: |
- ### Stats three
-
-statsFour: |
- ### Stats four
-
-statsFive: |
- ### Stats five
-
-
 ---
 

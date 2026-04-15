@@ -9,24 +9,24 @@
       "url": "/why-us/"
     },
     {
-      "text": "Privacy",
-      "url": "/privacy/"
+      "text": "Case studies",
+      "url": "/case-studies/"
     },
     {
       "text": "Contact",
       "url": "/contact/"
     },
     {
-      "text": "Case studies",
-      "url": "/case-studies/"
-    },
-    {
       "text": "FAQs",
       "url": "/faqs/"
-    },
+     },
     {
-      "text": "Services",
-      "url": "/services/"
+      "text": "For suppliers",
+      "url": "/suppliers/"
+    },
+     {
+      "text": "Privacy",
+      "url": "/privacy/"
     }
   ]
 }

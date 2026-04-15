@@ -1,0 +1,9 @@
+{% if collections.statistics | length %}
+{% for statistic in collections.statistics %}
+<article class="item-statistic">
+<p class="alt-numeral">{{ statistic.data.numeral }}</p>
+<small>{{ statistic.data.title }}</small>
+<p>{{ statistic.data.description }}</p>
+</article>
+{% endfor %}
+{% endif %}

@@ -42,13 +42,7 @@
 {% if pointFour %}<div>{{ pointFour | markdown | safe }}</div>{% endif %}
 </div><!-- flex -->
 
-<div data-layout="flex">
-{% if statsOne %}<div>{{ statsOne | markdown | safe }}</div>{% endif %}
-{% if statsTwo %}<div>{{ statsTwo | markdown | safe }}</div>{% endif %}
-{% if statsThree %}<div>{{ statsThree | markdown | safe }}</div>{% endif %}
-{% if statsFour %}<div>{{ statsFour | markdown | safe }}</div>{% endif %}
-{% if statsFive %}<div>{{ statsFive | markdown | safe }}</div>{% endif %}
-</div><!-- flex -->
+{% include "partials/statistics-list.html" %}
 
 
 

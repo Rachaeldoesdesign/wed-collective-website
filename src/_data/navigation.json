@@ -1,28 +1,28 @@
 {
   "items": [
     {
-      "text": "About",
-      "url": "/about/"
-    },
-    {
-      "text": "Contact",
-      "url": "/contact/"
-    },
-    {
-      "text": "Blog",
-      "url": "/blog/"
+      "text": "Why us",
+      "url": "/why-us/"
     },
     {
       "text": "Case studies",
       "url": "/case-studies/"
     },
     {
-      "text": "FAQs",
+      "text": "Your questions answered",
       "url": "/faqs/"
     },
     {
-      "text": "Services",
-      "url": "/services/"
+      "text": "Blog",
+      "url": "/blog/"
+    },
+    {
+      "text": "For suppliers",
+      "url": "/suppliers/"
+    },
+   {
+      "text": "Contact",
+      "url": "/contact/"
     }
   ]
 }

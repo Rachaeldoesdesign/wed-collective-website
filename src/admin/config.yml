@@ -122,26 +122,6 @@ collections:
             name: pointFour
             widget: markdown
             required: false
-          - label: Stats one
-            name: statsOne
-            widget: markdown
-            required: false
-          - label: Stats two
-            name: statsTwo
-            widget: markdown
-            required: false
-          - label: Stats three
-            name: statsThree
-            widget: markdown
-            required: false
-          - label: Stats four
-            name: statsFour
-            widget: markdown
-            required: false
-          - label: Stats five
-            name: statsFive
-            widget: markdown
-            required: false
           - label: Body
             name: body
             widget: markdown
@@ -516,6 +496,27 @@ collections:
         widget: number
         value_type: int
         min: 1
+  - name: statistics
+    label: Statistics
+    folder: src/statistics
+    create: true
+    slug: '{{slug}}'
+    fields:
+      - label: Title
+        name: title
+        widget: string
+      - label: Numeral
+        name: numeral
+        widget: string
+      - label: Description
+        name: description
+        widget: text
+      - label: Order
+        name: order
+        widget: number
+        value_type: int
+        min: 1
+
   - name: services
     label: Services
     folder: src/services

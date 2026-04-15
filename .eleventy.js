@@ -30,6 +30,12 @@ module.exports = function(eleventyConfig) {
     return md.render(content);
   });
 
+  eleventyConfig.addCollection("statistics", (collectionApi) => {
+    return collectionApi.getFilteredByTag("statistics").sort((a, b) => {
+      return (a.data.order || 0) - (b.data.order || 0);
+    });
+  });
+
   eleventyConfig.addTransform("optimizeHtml", (content, outputPath) => {
     return minifyHtmlOutput(content, outputPath);
   });
