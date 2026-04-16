@@ -21,7 +21,7 @@
 {% if lede %}{{ lede | markdown | safe }}{% endif %}
 
 <div data-align-h="center">
-<a href="/why-us">Find our more</a> &nbsp; <a href="javascript:void(0)" class="btn" data-variant="hero">Get started</a>
+<a href="/why-us">See how it works</a> &nbsp; <a href="javascript:void(0)" class="btn" data-variant="hero">Get started</a>
 </div><!-- align -->
 
 </div><!-- two -->
@@ -63,9 +63,9 @@
 <div>
 {{ clarity | markdown | safe }}
 
+<div class="alt-statistics">
 {% include "partials/statistics-list.html" %}
-
-<hr>
+</div><!-- statistics -->
 
 <div data-align-h="center">
 <a href="javascript:void(0)" class="btn" data-variant="accent">Get started</a>
@@ -117,7 +117,7 @@
 
 <h2 data-align-h="center" data-size="3xl">The Wed Collective news</h2>
 
-<div class="layout" data-layout="valletta" style="padding-block-start: 0;">
+<div data-content="posts" style="padding-block-start: 0;">
 
 {% for item in collections.blog %}
 {% if loop.index0 < 4 %}

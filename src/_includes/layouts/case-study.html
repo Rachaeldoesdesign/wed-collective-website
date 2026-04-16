@@ -2,57 +2,49 @@
 
 {% block content %}
 
-<div class="layout" data-layout="rome">
+<div class="layout" data-layout="zagreb">
 
 <div>
-{% if clientLogo %}<img src="{{ clientLogo }}" alt="{{ clientName or title }}">{% endif %}
 
-{% if img %}<img src="{{ img }}" alt="{{ title }}">{% endif %}
-
-{% if featured %}<small>Featured case study</small>{% endif %}
-{% if year %}<small>{{ year }}</small>{% endif %}
+{% if img %}<figure>
+<img src="{{ img }}" alt="{{ title }}">
+{% if year %}<figcaption>{{ year }}</figcaption>{% endif %}
+</figure>{% endif %}
 
 <h1>{{ title }}</h1>
 
 {% if lede %}<p>{{ lede }}</p>{% endif %}
 
-{% if clientName %}<p>{{ clientName }}</p>{% endif %}
-
-{% if projectUrl %}<p><a href="{{ projectUrl }}">Visit project</a></p>{% endif %}
-
 {{ content | safe }}
 
-<div data-layout="flex">
-{% if deliverables and deliverables.length %}
+<hr>
 
-<div>
-<h3>Deliverables</h3>
+<div data-layout="flex">
+{% if deliverables and deliverables.length %}<div>
 
 <ul class="alt-">
 {% for deliverable in deliverables %}
 <li>{{ deliverable }}</li>
 {% endfor %}
 </ul>
-</div>
-{% endif %}
+</div>{% endif %}
 
-{% if outcomes and outcomes.length %}
-<div>
-<h3>Outcomes</h3>
+{% if outcomes and outcomes.length %}<div>
 
 <ul class="alt-">
 {% for outcome in outcomes %}
 <li>{{ outcome }}</li>
 {% endfor %}
 </ul>
-</div>
-{% endif %}
+</div>{% endif %}
+
 </div><!-- layout -->
 
 
 
 {% if quotation %}
-<blockquote>
+<blockquote data-variant="l">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800"><g fill="none" fill-rule="evenodd"><path fill="#6d422b" fill-rule="nonzero" d="M469.183 410.385q111.888-36.104 176.853 30.687 64.967 66.79 46.92 182.32-14.436 101.09-101.058 146.217-86.622 45.129-180.462 5.416-68.577-32.493-95.645-101.088-27.07-68.595-19.851-137.192 7.218-83.036 50.53-171.489 43.31-88.452 111.886-164.268T609.944 71.017 775.969 6.032q7.22-3.61 10.828 5.415 3.61 9.026-3.61 16.246-119.104 50.544-209.335 149.828-90.231 99.283-104.669 232.864"/><path fill="#a0613f" fill-rule="nonzero" d="M186.763 411.77q111.886-36.102 176.853 30.688 64.966 66.79 46.92 182.32-14.436 101.09-101.058 146.217-86.622 45.129-180.463 5.416-68.575-32.493-95.644-101.089Q6.3 606.727 13.52 538.132q7.218-83.038 50.53-171.49 43.31-88.452 111.886-164.268T327.524 72.403q83.013-54.154 166.025-64.986 7.219-3.61 10.828 5.416 3.61 9.026-3.61 16.246-119.105 50.544-209.336 149.828-90.23 99.282-104.668 232.864"/></g></svg>
 <p>{{ quotation }}</p>
 </blockquote>
 {% endif %}
@@ -64,16 +56,19 @@
 <div>
 
 {% if categories and categories.length %}
-<h3>Categories</h3>
-
+<details>
+<summary>Categories</summary>
 <ul class="alt-">
 {% for category in categories %}
 <li><a href="/case-studies/category/{{ category | slug }}/">{{ category }}</a></li>
 {% endfor %}
 </ul>
+</details>
+
+<hr>
 {% endif %}
 
-<h3>More case studies</h3>
+<h3>More stories</h3>
 
 {% set caseStudyItems = collections.caseStudiesItems %}
 {% include "partials/case-studies-list.html" %}

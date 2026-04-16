@@ -2,10 +2,11 @@
 
 {% block content %}
 
+<h1 class="alt-full">{{ title }}</h1>
+
 <div class="layout" data-layout="amsterdam">
 
 <div>
-<h1>{{ title }}</h1>
 
 {% if lede %}{{ lede | markdown | safe }}{% endif %}
 
@@ -19,8 +20,6 @@
 </ul>
 </nav>
 {% endif %}
-
-<p aria-live="polite" data-case-studies-results></p>
 
 <div class="layout" data-case-studies-browser data-layout="vienna">
 {% include "partials/case-studies-list.html" %}

@@ -2,18 +2,18 @@
 
 {% block content %}
 
+<h1 class="alt-full">{{ title }}</h1>
+
 <div class="layout" data-layout="brussels">
+
 <div>
-
-<h1>{{ title }}</h1>
-
 {% if lede %}
 {{ lede | markdown | safe }}
 {% endif %}
 
 {% for category in collections.faqCategories %}
-<section>
-<h2>{{ category }}</h2>
+
+<h3>{{ category }}</h3>
 {% set categoryFaqs = collections.faqItems | filterFaqsByCategory(category) %}
 {% for item in categoryFaqs %}
 {% set faqId = "faq-" + item.fileSlug %}
@@ -24,7 +24,7 @@
 </div>
 </details>
 {% endfor %}
-</section>
+
 {% endfor %}
 
 </div>

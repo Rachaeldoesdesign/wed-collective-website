@@ -9,30 +9,16 @@
 
 {% include "partials/header.html" %}
 
-{% if featureImage %}
-<figure>
-<img src="{{ featureImage }}" alt="{{ featureImageCaption }}" />
-{% if featureImageCaption %}
-<figcaption>{{ featureImageCaption }}</figcaption>
-{% endif %}
-</figure>
-{% endif %}
+<h1 class="alt-full">{{ title }}</h1>
 
-<h1>{{ title }}</h1>
-{% if lede %}
-{{ lede | markdown | safe }}
-{% endif %}
-
-<div class="layout" data-layout="rome">
+<div class="layout" data-layout="tallinn">
 
 <div>
 {{ content | safe }}
 
 <form action="/thanks/" class="contact-form" data-netlify="true" method="POST" name="contact-form" netlify-honeypot="bot-field">
 <input type="hidden" name="form-name" value="contact-form">
-<p hidden>
-<label>Don&#8217;t fill this out: <input name="bot-field"></label>
-</p>
+<p hidden><label>Don&#8217;t fill this out: <input name="bot-field"></label></p>
 
 <div data-layout="flex">
 
@@ -46,7 +32,7 @@
 <input type="text" name="contact-company" id="contact-company">
 </div><!-- two -->
 
-</div><!-- layout -->
+</div><!-- flex -->
 
 <div data-layout="flex">
 
@@ -60,7 +46,7 @@
 <input type="tel" name="contact-tel" id="contact-tel">
 </div><!-- two -->
 
-</div><!-- layout -->
+</div><!-- flex -->
 
 <div>
 <label for="contact-message">Message</label>
@@ -72,13 +58,14 @@
 </div><!-- align -->
 
 </form>
-</div><!-- one -->
 
-<div>
+<hr>
+
 {% if aside %}
 {{ aside | markdown | safe }}
 {% endif %}
-</div><!-- two -->
+
+</div><!-- one -->
 
 </div><!-- layout -->
 

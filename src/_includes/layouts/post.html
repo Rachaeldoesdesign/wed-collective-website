@@ -4,21 +4,24 @@
 
 {% block content %}
 
+<h1 class="alt-full">{{ title }}</h1>
+
 <div class="layout" data-layout="tallinn">
 
 <div>
 
-<small class="item-meta">{{ (date or page.date) | dateFilter }}</small>
-<h1>{{ title }}</h1>
 <p>{{ postSummary }}</p>
 
 {{ content | safe }}
 
-<small>{{ postAuthor }}
+<hr>
+
+<small class="item-meta">
+{{ (date or page.date) | dateFilter }} •
+{{ postAuthor }} &nbsp;
 {% if postTags %}
- •
 {% for tag in postTags %}
-<span class="tag">{{ tag }}</span>{% if not loop.last %} • {% endif %}
+<span class="alt-tag">{{ tag }}</span>
 {% endfor %}
 {% endif %}
 </small>
@@ -26,14 +29,14 @@
 </div><!-- one -->
 </div><!-- layout -->
 
-<hr>
+<hr data-function="spacer">
 
 {% if recommendedPosts %}
 {% set postListItems = recommendedPosts %}
-<h2>More posts</h2>
+
 <div data-content="posts">
 {% include "partials/post-list.html" %}
-</div>
+</div><!-- layout -->
 {% endif %}
 
 {% endblock %}

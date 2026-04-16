@@ -1,20 +1,16 @@
 ---
-featureImage: /images/placeholder-featured.svg
-featureImageCaption: Abstract illustration placeholder
-layout: 'layouts/contact.html'
-metaDesc: A starter contact page with a Netlify-ready form and supporting details.
-permalink: '/contact/'
-title: 'Contact'
+featureImage: "/images/placeholder-featured.svg"
+featureImageCaption: ""
+layout: "layouts/contact.html"
+metaDesc:
+permalink: "/contact/"
+title: "Contact us"
 
 lede: |
-  <p class="alt-lede">Invite enquiries, project briefs, or general questions. Replace the sample details below with your own workflow and response times.</p>
 
 aside: |
-  ### Contact details
-
-  - Email: hello@example.com
+  - Email: [hello@thewedcollective.com](mailto:hello@thewedcollective.com)
   - Phone: +44 (0)1234 567890
-  - Update these values in `Site Data`
 
 ---
 
