@@ -7,7 +7,15 @@ featureImageCaption: ""
 lede: >-
   **YOUR WEDDING PLANNING ERA DESERVES MORE THAN 27 TABS OPEN.**
 
-  We’ve done the spreadsheets. The colour-coded chaos. The “just following up” emails.
+
+
+  We’ve done the spreadsheets. 
+
+
+  The colour-coded chaos. 
+
+
+  The “just following up” emails.
 
 
   **So we built the platform we wish existed when we were planning our own weddings.**
