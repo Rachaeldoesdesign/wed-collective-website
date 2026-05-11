@@ -31,7 +31,10 @@ planning: >-
 
   * Your Timelines.
 
-  *
+
+  **No spreadsheets required.**
+
+  *(You’re welcome.)*
 clarity: >
   <h2 data-size="3xl" data-align-h="center">Vetting suppliers, so you
   don&#8217;t have to</h2>
