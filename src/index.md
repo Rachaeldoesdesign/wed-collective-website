@@ -35,9 +35,8 @@ planning: >-
   **No spreadsheets required.**
 
   *(You’re welcome.)*
-clarity: >
-  <h2 data-size="3xl" data-align-h="center">Vetting suppliers, so you
-  don&#8217;t have to</h2>
+clarity: <h2 data-size="3xl" data-align-h="center">We vet suppliers so that you
+  don't have to</h2>
 clarityImageOne: https://thewedcollective.co.uk/public/images/photo-1.jpg
 clarityImageTwo: https://thewedcollective.co.uk/public/images/photo-2.jpg
 clarityImageThree: https://thewedcollective.co.uk/public/images/photo-3.jpg
