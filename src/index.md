@@ -5,11 +5,11 @@ metaDesc: Wedding planning made with AI matching.
 featureImage: /images/z62_3538_websize-1-.jpg
 featureImageCaption: ""
 lede: >-
-  ### <p data-align-h="center">**YOUR WEDDING PLANNING ERA DESERVES MORE THAN 27
-  TABS OPEN.**</p>
+  YOU'RE WEDDING PLANNING ERA DESERVES MORE THAN 27 TABS OPEN\
 
+  \
 
-  We’ve done the spreadsheets. \
+  We’ve done the spreadsheets.\
 
   The colour-coded chaos. \
 
