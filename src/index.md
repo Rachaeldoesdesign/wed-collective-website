@@ -8,12 +8,9 @@ lede: >-
   **YOUR WEDDING PLANNING ERA DESERVES MORE THAN 27 TABS OPEN.**
 
 
+  We’ve done the spreadsheets. \
 
-  We’ve done the spreadsheets. 
-
-
-  The colour-coded chaos. 
-
+  The colour-coded chaos. \
 
   The “just following up” emails.
 
