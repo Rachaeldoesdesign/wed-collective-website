@@ -5,7 +5,7 @@ metaDesc: Wedding planning made with AI matching.
 featureImage: /images/z62_3538_websize-1-.jpg
 featureImageCaption: ""
 lede: >-
-  YOU'RE WEDDING PLANNING ERA DESERVES MORE THAN 27 TABS OPEN\
+  **YOU'RE WEDDING PLANNING ERA DESERVES MORE THAN 27 TABS OPEN**\
 
   \
 
