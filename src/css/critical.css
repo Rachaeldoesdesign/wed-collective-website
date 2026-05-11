@@ -1167,7 +1167,7 @@ transition: min-height .5s ease-in-out; }
 /* === BANNER =================  */
 
 #hero {
-background-image: linear-gradient(to right, var(--color-base) 0%, rgb(26 26 26 / 0) 50%), url('/images/index-1.webp');
+background-image: linear-gradient(to right, var(--color-base) 0%, rgb(26 26 26 / 0) 50%), url('/images/hero-new.webp');
 background-position: 0 0, center center;
 background-size: auto, cover;
 background-repeat: no-repeat, no-repeat;
